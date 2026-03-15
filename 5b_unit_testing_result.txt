@@ -1,0 +1,50 @@
+theia@theiadocker-hadjirasulja:/home/project/final_project$ python3 -m unittest test_emotion_detection.py
+.FFFF
+======================================================================
+FAIL: test_disgust (test_emotion_detection.TestEmotionDetection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/final_project/test_emotion_detection.py", line 21, in test_disgust
+    self.assertEqual(result['dominant_emotion'], 'disgust')
+AssertionError: 'anger' != 'disgust'
+- anger
++ disgust
+
+
+======================================================================
+FAIL: test_fear (test_emotion_detection.TestEmotionDetection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/final_project/test_emotion_detection.py", line 31, in test_fear
+    self.assertEqual(result['dominant_emotion'], 'fear')
+AssertionError: 'anger' != 'fear'
+- anger
++ fear
+
+
+======================================================================
+FAIL: test_joy (test_emotion_detection.TestEmotionDetection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/final_project/test_emotion_detection.py", line 11, in test_joy
+    self.assertEqual(result['dominant_emotion'], 'joy')
+AssertionError: 'anger' != 'joy'
+- anger
++ joy
+
+
+======================================================================
+FAIL: test_sadness (test_emotion_detection.TestEmotionDetection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/final_project/test_emotion_detection.py", line 26, in test_sadness
+    self.assertEqual(result['dominant_emotion'], 'sadness')
+AssertionError: 'anger' != 'sadness'
+- anger
++ sadness
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.605s
+
+FAILED (failures=4)

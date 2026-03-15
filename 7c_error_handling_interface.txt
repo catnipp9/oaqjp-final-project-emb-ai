@@ -1,0 +1,11 @@
+theia@theiadocker-hadjirasulja:/home/project/final_project$ python3 server.py
+ * Serving Flask app 'server'
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+theia@theiadocker-hadjirasulja:/home/project/final_project$ curl -X POST http://localhost:5000/emotionDetector \
+     -H "Content-Type: application/json" \
+     -d '{"text": ""}'
+{
+  "result": "Invalid text! Please try again!"
+}
